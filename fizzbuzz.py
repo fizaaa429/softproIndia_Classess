@@ -6,4 +6,12 @@ for i in range(1,100):
     elif i % 5 == 0:
         print("buzz")
     else:
-        print(i)        
+        print(i)
+        
+for i in range(i, n + 1):
+    if i % 3 == 0 and i & 5 == 0:
+        print("fizzbuzz")
+    elif i % 3 == 0:
+        print("fizz")
+            
+        
