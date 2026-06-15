@@ -1,18 +1,21 @@
-""" 
-default value
-"""
 
-def great(name,greeting = "hi"):
-    print(f"{greeting} , {name}")
+def add_cart_item(item,cart=[]):
+    cart.append(item)
+    return cart
 
-great("fiza")
-great("fiza","welcome")    
+print(" ", add_cart_item("Apple"))
+print(" ", add_cart_item("banana"))
+print(" ", add_cart_item("bread"))
 
-#keyword arguments
-def book_tickets(name,seat,price):
-    print(f"{name} --> seat {seat} (rs {price})")
+def add_cart(item_cart=None):
+    if cart is None:
+        cart = []
+    cart.append(item)
+    return add_cart
+print(" ", add_cart("apple"))
+print(" ", add_cart("banana"))
+print(" ", add_cart("bread"))    
     
-book_tickets("arjit","3b",899)   
-book_tickets(name="arjit",price=899,seat="3b")
-book_tickets("arjit",price=899,seat="3b")
+
+
    
