@@ -22,6 +22,21 @@ removed_item = student.pop("marks")
 print(removed_item)
 
 del student["email"]
+#task - create the total bill 
+prices = {
+    "coffee":120,
+    "juice":100,
+    "sandwich":150
+}
+order = ["coffee,juice"] 
+
+total_bill = 0
+for item in order:
+    total_bill +=prices.get(item)
+    
+    
+    
+                    
 
 
 
